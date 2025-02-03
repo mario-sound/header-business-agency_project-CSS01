@@ -1,0 +1,126 @@
+@use "../abstracts/abstracts" as abstracts;
+@use "../components/buttons" as buttons;
+
+body {
+  background-image: url("../../img/hero@2x.jpg");
+  background-position: right top;
+  background-size: 62rem;
+  background-repeat: no-repeat;
+}
+
+main.container {
+  max-width: 1600px;
+  margin: 0 auto;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 40px;
+  figure {
+    align-items: center;
+    figcaption {
+      display: none;
+    }
+  }
+  nav {
+    ul {
+      display: flex;
+      list-style: none;
+      gap: 3rem;
+      li {
+        a {
+          text-decoration: none;
+          color: black;
+          &:hover {
+            color: abstracts.$grey-corporate;
+          }
+        }
+      }
+    }
+  }
+}
+
+section.hero {
+  .hero-landing {
+    padding: 40px 0;
+    display: flex;
+    max-width: 60%;
+    .hero_image {
+      background-color: abstracts.$blue-corporate;
+      img {
+        width: 100%;
+      }
+    }
+  }
+  h1 {
+    > span {
+      display: inline-block;
+      text-transform: uppercase;
+      font-family: abstracts.$secondary-font;
+      font-weight: 400;
+      font-size: 120px;
+      line-height: 120px;
+      letter-spacing: -3px;
+      color: black;
+      span.highlight {
+        color: abstracts.$blue-corporate;
+      }
+    }
+  }
+  p {
+    font-size: 24px;
+    max-width: 65%;
+    color: abstracts.$grey-corporate;
+  }
+  a.button {
+    @extend %button;
+  }
+
+  section.hero_number {
+    display: flex;
+    margin-top: 60px;
+    gap: 80px;
+    article {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      span:first-child {
+        font-family: abstracts.$secondary-font;
+        font-size: 48px;
+      }
+      span:nth-child(2) {
+        color: abstracts.$grey-corporate;
+      }
+    }
+  }
+
+  section.categories {
+    display: flex;
+    justify-content: center;
+    margin-top: 60px;
+    gap: 20px;
+    article {
+      background: white;
+      padding: 30px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      text-align: start;
+      gap: 20px;
+      img {
+        width: 100px;
+      }
+      h3 {
+        font-size: 24px;
+        font-family: abstracts.$primary-font;
+        font-weight: 500;
+      }
+      p {
+        color: abstracts.$grey-corporate;
+        font-size: abstracts.$font-size-base;
+      }
+    }
+  }
+}

@@ -1,0 +1,14 @@
+@use "../abstracts/abstracts" as abstracts;
+
+%button {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: abstracts.$blue-corporate;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  margin-top: 60px;
+  &:hover {
+    background-color: darken(abstracts.$blue-corporate, 10%);
+  }
+}
