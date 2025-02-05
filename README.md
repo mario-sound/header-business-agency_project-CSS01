@@ -64,6 +64,6 @@ npm run dev
 Si quieres conocer más sobre mi trabajo, puedes encontrarme en:
 
 - **GitHub**: [@mario-sound](https://github.com/mario-sound)
-- **LinkedIn**: _[[](https://www.linkedin.com/in/mariosanchezsonido/)]_
+- **LinkedIn**: _[[LinkedIn](https://www.linkedin.com/in/mariosanchezsonido/)]_
 
 ¡Gracias por visitar este proyecto! 🚀
